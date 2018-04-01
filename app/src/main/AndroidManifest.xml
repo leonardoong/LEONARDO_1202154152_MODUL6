@@ -20,9 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".PostActivity" />
-        <activity android:name=".DetailPostActivity"></activity>
+        <activity android:name=".RegisterActivity" android:parentActivityName=".LoginActivity"/>
+        <activity android:name=".PostActivity" android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".DetailPostActivity" android:parentActivityName=".HomeActivity"></activity>
     </application>
 
 </manifest>
